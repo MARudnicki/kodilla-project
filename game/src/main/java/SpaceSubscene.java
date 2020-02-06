@@ -20,5 +20,9 @@ public class SpaceSubscene extends SubScene {
         AnchorPane root2 = (AnchorPane) this.getRoot();
 
         root2.setBackground(new Background(image));
+
+        this.setOnMouseClicked(event -> {
+            System.out.println("Space subscene clicked !");
+        });
     }
 }
